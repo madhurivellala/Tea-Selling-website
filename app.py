@@ -2,7 +2,7 @@ from urllib import request
 from flask import *
 import sqlite3, hashlib, os
 from werkzeug.utils import secure_filename
-
+from collections.abc import Iterable
 app = Flask(__name__)
 app.secret_key = 'random string'
 UPLOAD_FOLDER = 'static/uploads'
